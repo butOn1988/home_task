@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+       <meta charset="utf-8">
+       <title>Авторизация</title>
+    </head>
+    <body>
+        <header>
+            <h2>Авторизация</h2>
+        </header>
+        <form action="#" method="POST">
+            <div>
+                <label for="login">Введите логин</label>
+                <input id="login" type="text" placeholder="логин" required name="login"> 
+            </div>
+            <div> 
+                <label for="password">Введите пароль</label>
+                <input id="password" type="password" placeholder="пароль" required minlength="6" name="password"> 
+            </div>
+            <div>
+                <label for="age">Введите ваш возраст</label>
+                <input id="age" type="text" placeholder="возраст" required name="age">
+            </div>
+            <div> 
+                <label for="Name">Введите имя (не обязательно)</label>
+                <input id="name" type="text" placeholder="имя"> 
+            </div>
+            <div> 
+                <label for="telephone">Номер телефона (не обязательно)</label>
+                <input id="telephone" type="text" placeholder="Номер телефона"> 
+            </div>
+            <div>
+                <label>
+                    Запомнить 
+                    <input type="checkbox" name="remember" checked value="remember">
+                </label>
+            </div>
+            <input type="submit" value="Войти"> 
+        </form>
+    </body>
+</html>

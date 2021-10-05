@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+       <meta charset="utf-8">
+       <title>Подбор квартиры по вашим параметрам</title>
+    </head>
+    <body>
+        <header>
+            <h2>Подбор квартиры по вашим параметрам</h2>
+        </header>
+        <form action="#" method="POST" enctype="multipart/form-data"> <!--enctype="multipart/form-data"> добавляем для разрешения пользователю загрузить файл на сервер-->
+            <div> 
+                <label for="area">Укажите район</label>
+                <select autofocus id="area" name="area"> 
+                    <option value="first" selected>Невский</option>
+                    <option value="second">Адмиралтейский</option>
+                    <option value="third">Выборгский</option>
+                    <option value="four">Василеостровский</option>
+                </select>
+            </div>
+            <div> 
+                <label for="metro">Укажите ст.метро</label>
+                <select autofocus id="metro" name="metro"> 
+                    <option value="first" selected>Невский проспект</option>
+                    <option value="second">Адмиралтейская</option>
+                    <option value="third">Выборгская</option>
+                    <option value="four">Василеостровская</option>
+                </select>
+            </div>
+            <div>
+                <label for="street">Желаемая улица</label>
+                <input id="street" type="text" name="street" placeholder="Улица">
+            </div> 
+            <div> 
+                <label for="rooms">Колличество комнат</label>
+                <select autofocus id="rooms" name="rooms"> 
+                    <option value="one" selected>1-комнатная</option>
+                    <option value="two">2-комнатная</option>
+                    <option value="three">3-комнатная</option>
+                    <option value="four">4-комнатная</option>
+                    <option value="atelier">студия</option>
+                </select>
+            </div>
+            <div>
+                <label for="old">Год постройки дома</label>
+                <input id="old" type="number" name="old" min="1970" max="2021" step="1" placeholder="min 1970">
+            </div>
+            <div>
+                <label for="area">Площадь квартиры кв/м:</label>
+                <input id="area" type="number" name="area" min="15" max="180" step="5" placeholder="max 180">
+            </div>
+            <div> 
+                <h4>Дополнительно:</h4>
+                <label>
+                    <p>Отделка</p>
+                    Да
+                    <input type="radio" name="ansver" value="fin" checked>
+                </label>
+                <label>
+                    Нет
+                    <input type="radio" name="ansver"value="no fin">
+                </label>
+                <label>
+                    <p>С терассой</p>
+                    Да
+                    <input type="radio" name="ansver" value="ter" checked>
+                </label>
+                <label>
+                    Нет
+                    <input type="radio" name="ansver"value="no ter">
+                </label>
+                <label>
+                    <p>Категория жилья</p>
+                    Комфорт-класс
+                    <input type="checkbox" name="additional[]" value="comfort">
+                </label>
+                    Бизнес-класс
+                    <input type="checkbox" name="additional[]" value="busines">
+                </label>
+                <label>
+                    Премиум
+                    <input type="checkbox" name="additional[]"value="premium">
+                </label>
+                <label>
+                    Deluxe
+                    <input type="checkbox" name="additional[]"value="Deluxe">
+                </label>
+            </div>
+            <div>
+                <label for="floar">Этаж</label>
+                <input id="floar" type="number" name="floar" min="1" max="25" step="1">
+            </div>
+            <div>
+                <label>
+                    Не первый
+                    <input type="checkbox" name="additional[]" value="min+1">
+                </label>
+                    Не последний
+                    <input type="checkbox" name="additional[]" value="max-1">
+                </label>
+            </div>
+        </form>
+    </body>
+</html>
