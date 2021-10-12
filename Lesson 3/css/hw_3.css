@@ -1,0 +1,86 @@
+.container {
+    background-color: orange;
+    list-style-type: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.container > li > ul {
+    display: none;
+}
+
+.block {
+    display: inline; 
+}
+
+.block a {
+    color: orangered;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;  
+}
+
+#line a:hover {
+    border-bottom: 3px solid orangered;
+}
+.zagolovok {
+    text-transform: uppercase;
+}
+
+main {
+    text-align: center;
+    margin: auto 15%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 5px solid rgb(196, 194, 194);
+    border-radius: 3px/3px;
+}
+
+.text {
+    text-align: left;
+}
+
+.ssbllka {
+    background-color: orange;
+    border-radius: 3px/3px;
+    margin-bottom: 40px;
+}
+
+.link {
+        color: orangered;
+    text-decoration: none;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+    color: orangered;
+}
+
+.pagination a {
+    color: orangered;
+    text-decoration: none;
+    border: 2px solid orangered;
+    border-radius: 3px/3px;
+    padding: 6px 14px;
+}
+
+.sknd {
+    background-color: orange;
+}
+
+.background {
+    background-image: url(image/2.jpg);
+    object-fit: cover;
+}
