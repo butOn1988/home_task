@@ -1,0 +1,99 @@
+@import "flex-grid.css";
+
+header {
+    display: flex;
+    text-align: center;
+    /* max-width: 1200px; */
+    padding: 1rem 0;
+    color:rgb(184, 146, 129);
+    background-color:rgb(94, 69, 60);
+}
+header div {
+    display: flex;
+}
+header a {
+    display: flex;
+    flex: 1;
+}
+
+body aside {
+    display: flex;
+    border: 1px solid silver;
+}
+
+main {
+    display: flex;
+	color: rgb(94, 69, 60);
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/* #container div {
+	flex: 1;
+	border: 1px solid silver;
+	gap: 5px;
+	padding: 2rem;
+	margin: auto;
+} */
+
+#container div p {
+	text-align: center;
+	background-color: rgb(94, 69, 60);
+	color: rgb(184, 146, 129);
+	margin: 1rem;
+	padding: 0.5rem;
+}
+	
+.margin {
+	margin: 1ch;
+	background-color: rgb(207, 200, 197);    
+    
+}
+
+img {
+	width: 100%;
+	height: auto;
+	background-color: #d7ccc8;
+	object-fit: cover;
+	padding: 10px;
+
+}
+
+.visit {
+	display: flex;
+	flex-grow: 1;
+	background-color: rgb(207, 200, 197);  
+	align-items: center;
+	text-transform: uppercase;
+	justify-content: space-around;
+}
+
+aside {
+	background-color: rgb(199, 172, 176);
+	width: 100%;
+	margin: 0;	
+	padding: 0;
+}
+
+aside h4 {
+	text-transform: uppercase;
+	margin: 0;	
+	padding: 0;
+}
+
+.footer {
+	height: 100px;	
+	padding-left: 10px;
+	padding-top: 5px;
+	color:rgb(184, 146, 129);
+    background-color:rgb(94, 69, 60);
+}
+.footer h3 {
+	text-transform: uppercase;
+	margin: 0;	
+	padding: 0;
+}
